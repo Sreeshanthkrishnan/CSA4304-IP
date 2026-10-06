@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cake Ordering</title>
+<link rel="stylesheet" href="6.css">
+</head>
+<body>
+
+<h1>Online Cake Ordering</h1>
+
+<div>
+<h2>Search Cake</h2>
+<input id="search" placeholder="Cake name">
+<select>
+<option>Chocolate</option>
+<option>Birthday</option>
+<option>Wedding</option>
+</select>
+<button onclick="searchCake()">Search</button>
+</div>
+
+<div>
+<h2>Cake List</h2>
+<p>🎂 Chocolate Cake - ₹600</p>
+<button onclick="cart()">Add to Cart</button>
+<p>🍰 Strawberry Cake - ₹700</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+<div>
+<h2>Place Order</h2>
+<input placeholder="Name">
+<input placeholder="Address">
+<select>
+<option>1 kg</option>
+<option>2 kg</option>
+</select>
+<button onclick="order()">Place Order</button>
+</div>
+
+<div>
+<h2>My Order</h2>
+<p>Order Status: Shipped</p>
+</div>
+
+<div>
+<h2>Admin</h2>
+<button onclick="admin()">Login</button>
+<p id="msg"></p>
+</div>
+
+<script src="6.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.box {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+h2 {
+    color: navy;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin: 5px;
+}
+
+textarea {
+    width: 250px;
+    height: 80px;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    input, select {
+        width: 90%;
+    }
+}
+```

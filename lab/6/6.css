@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    background: pink;
+    margin: 20px;
+}
+
+h1 {
+    background: purple;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+div {
+    background: white;
+    padding: 15px;
+    margin: 15px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    background: purple;
+    color: white;
+    border: 0;
+}
