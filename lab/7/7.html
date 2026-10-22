@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow & Grace | Beauty Parlour</title>
+  <link rel="stylesheet" href="7.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#">🌸 Glow & Grace</a>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#stylists">Stylists</a>
+    <a href="#booking">Book Now</a>
+    <a href="#my-bookings">My Appointments</a>
+  </nav>
+  <button class="button button-outline" id="admin-toggle">Staff View</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">YOUR TIME. YOUR GLOW.</p>
+      <h1>A little time for you.<br><span>A lot more glow.</span></h1>
+      <p class="hero-text">
+        Book your favourite beauty service with a stylist you love.
+        Choose a date and time that works for you.
+      </p>
+      <a class="button" href="#booking">Book an Appointment ↗</a>
+      <p class="stars">★★★★★ Beautiful services, made for you.</p>
+    </div>
+
+    <div class="hero-art">
+      <div class="sun"></div>
+      <div class="art-plant">✿</div>
+      <div class="face-art">
+        <div class="hair"></div>
+        <div class="face">
+          <span class="eye eye1"></span>
+          <span class="eye eye2"></span>
+          <span class="nose"></span>
+          <span class="lips"></span>
+        </div>
+      </div>
+      <div class="art-label">YOUR SELF-CARE MOMENT ✦</div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">OUR SERVICES</p>
+        <h2>Find your feel-good service</h2>
+      </div>
+      <p>From everyday essentials to special-occasion beauty.</p>
+    </div>
+    <div class="service-grid" id="service-grid"></div>
+  </section>
+
+  <section class="section stylist-section" id="stylists">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">MEET OUR TEAM</p>
+        <h2>Meet your stylists</h2>
+      </div>
+      <p>Choose the person who makes you feel your best.</p>
+    </div>
+    <div class="stylist-grid" id="stylist-grid"></div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-intro">
+      <p class="eyebrow">IT'S YOUR MOMENT</p>
+      <h2>Book your appointment.</h2>
+      <p>Choose your service, stylist, date, and time.</p>
+      <div class="booking-perks">
+        <span>✓ Easy rescheduling</span>
+        <span>✓ Clear pricing</span>
+        <span>✓ Personalised care</span>
+      </div>
+    </div>
+
+    <form id="booking-form" class="booking-card">
+      <h3>Your visit, your way</h3>
+
+      <div class="form-row">
+        <label>Full Name
+          <input id="customer-name" type="text" required placeholder="Your name">
+        </label>
+        <label>Email Address
+          <input id="customer-email" type="email" required placeholder="you@example.com">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Choose a Service
+          <select id="service-select" required></select>
+        </label>
+        <label>Choose a Stylist
+          <select id="stylist-select" required></select>
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Appointment Date
+          <input id="booking-date" type="date" required>
+        </label>
+        <label>Available Time
+          <select id="time-select" required></select>
+        </label>
+      </div>
+
+      <div class="payment-box">
+        <strong>Payment Preference</strong>
+        <p>Choose your payment option.</p>
+
+        <label class="radio-option">
+          <input type="radio" name="payment" value="deposit" checked>
+          Pay 20% Deposit <span id="deposit-price"></span>
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="payment" value="full">
+          Pay in Full <span id="full-price"></span>
+        </label>
+
+        <p class="demo-note">Demo only. No real payment is processed.</p>
+      </div>
+
+      <button class="button submit-button" type="submit">
+        Confirm Appointment →
+      </button>
+      <p class="form-message" id="form-message" role="status"></p>
+    </form>
+  </section>
+
+  <section class="section" id="my-bookings">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">YOUR PERSONAL SPACE</p>
+        <h2>My Appointments</h2>
+      </div>
+      <p>View and manage your bookings.</p>
+    </div>
+
+    <div class="account-tools">
+      <label>Email Used to Book
+        <input id="account-email" type="email" placeholder="Enter your email">
+      </label>
+      <button class="button button-outline" id="load-bookings">
+        View Appointments
+      </button>
+    </div>
+
+    <div id="customer-bookings" class="booking-list">
+      <div class="empty-state">Enter your booking email to see appointments.</div>
+    </div>
+  </section>
+
+  <section class="section staff-section hidden" id="staff-panel">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">SALON TEAM</p>
+        <h2>Reservation Manager</h2>
+      </div>
+      <p>Manage bookings and contact customers.</p>
+    </div>
+
+    <div class="staff-toolbar">
+      <label>Filter by Date
+        <input id="staff-date-filter" type="date">
+      </label>
+      <button class="button button-outline" id="clear-date-filter">Show All</button>
+    </div>
+
+    <div id="staff-bookings" class="booking-list"></div>
+    <p class="demo-note">
+      Demonstration staff panel. Secure staff login is not included.
+    </p>
+  </section>
+
+  <section class="feedback-section">
+    <div>
+      <p class="eyebrow">YOUR FEEDBACK MATTERS</p>
+      <h2>Help us improve.</h2>
+      <p>Tell us about your experience at our salon.</p>
+    </div>
+
+    <form id="feedback-form">
+      <label>Your Name
+        <input id="feedback-name" required placeholder="Your name">
+      </label>
+
+      <label>Your Feedback
+        <textarea id="feedback-text" required rows="3"
+          placeholder="How was your visit?"></textarea>
+      </label>
+
+      <button class="button" type="submit">Send Feedback ↗</button>
+      <p id="feedback-message" class="form-message"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <a class="brand" href="#">🌸 Glow & Grace</a>
+  <p>Made for your feel-good moments. © 2026 Glow & Grace</p>
+</footer>
+
+<script src="7.js"></script>
+</body>
+</html>

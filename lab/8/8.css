@@ -1,0 +1,37 @@
+```css
+body {
+  font-family: Arial;
+  background: #eaf5ff;
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  max-width: 350px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: #087f8c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  background: white;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 350px;
+}
+```

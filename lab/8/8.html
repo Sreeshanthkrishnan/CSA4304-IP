@@ -1,0 +1,41 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MedCare Appointment</title>
+  <link rel="stylesheet" href="8.css">
+</head>
+<body>
+  <h1>🏥 MedCare Hospital</h1>
+  <h2>Book an Appointment</h2>
+
+  <form id="form">
+    <input id="patient" placeholder="Patient Name" required>
+
+    <select id="hospital" required>
+      <option value="">Select Hospital</option>
+      <option>Jaya Hospital</option>
+      <option>Parvathy Hospital</option>
+      <option>Deepika Eye Care Hospital</option>
+    </select>
+
+    <select id="doctor" required>
+      <option value="">Select Doctor</option>
+      <option>Dr. Arun - General Physician</option>
+      <option>Dr. Priya - Gynecologist</option>
+      <option>Dr. Ravi - Eye Specialist</option>
+    </select>
+
+    <input type="date" id="date" required>
+    <input type="time" id="time" required>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+
+  <h2>Appointment Details</h2>
+  <div id="result"></div>
+
+  <script src="8.js"></script>
+</body>
+</html>
+```

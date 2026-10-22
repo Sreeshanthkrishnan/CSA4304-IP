@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Finder</title>
+  <link rel="stylesheet" href="11.css">
+</head>
+<body>
+  <header>
+    <h1>🏡 Home Finder</h1>
+    <button onclick="login()">Buyer Login</button>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Dream Property</h2>
+    <p>Search houses, apartments, and land within your budget.</p>
+  </section>
+
+  <section class="search">
+    <input id="location" placeholder="Enter location">
+    <input id="budget" type="number" placeholder="Maximum budget">
+    <select id="type">
+      <option value="All">All Properties</option>
+      <option value="House">House</option>
+      <option value="Apartment">Apartment</option>
+      <option value="Land">Land</option>
+    </select>
+    <button onclick="searchProperties()">Search</button>
+    <button onclick="savedSearch()">Saved Search</button>
+  </section>
+
+  <h2>Available Properties</h2>
+  <main id="properties"></main>
+
+  <section class="agents">
+    <h2>Contact Our Agent</h2>
+    <p>Agent: Ravi Kumar</p>
+    <p>Phone: 9876543210</p>
+    <p>Email: agent@example.com</p>
+  </section>
+
+  <section>
+    <h2>Favorite Properties</h2>
+    <div id="favorites"></div>
+  </section>
+
+  <section>
+    <h2>Visitor Information</h2>
+    <p>Total visits on this browser: <span id="visitors">0</span></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Home Finder | Find a place to call home.</p>
+  </footer>
+
+  <script src="11.js"></script>
+</body>
+</html>

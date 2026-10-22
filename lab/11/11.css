@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f7f5;
+  color: #263b35;
+}
+
+header {
+  background: #176b57;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  background: #176b57;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hero {
+  background: #d5eee5;
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.search {
+  text-align: center;
+  padding: 20px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+}
+
+.card, section.agents, body > section:not(.hero):not(.search) {
+  background: white;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.card {
+  width: 230px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.card h3 {
+  color: #176b57;
+}
+
+footer {
+  text-align: center;
+  background: #176b57;
+  color: white;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  input, select {
+    width: 85%;
+  }
+}

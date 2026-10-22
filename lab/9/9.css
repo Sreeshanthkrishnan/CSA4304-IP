@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f2f5f9;
+  color: #222;
+}
+
+header {
+  background: #142d4e;
+  color: white;
+  padding: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #087f8c;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #065f69;
+}
+
+nav {
+  text-align: center;
+  padding: 15px;
+  background: white;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+}
+
+.card, section {
+  background: white;
+  padding: 18px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.card {
+  width: 200px;
+  text-align: center;
+}
+
+.card h3 {
+  color: #142d4e;
+}
+
+section {
+  max-width: 700px;
+}
+
+#cart, #orders, #admin {
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
